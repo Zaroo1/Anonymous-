@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FIRST HAND SRC Anonymous Voting 🤫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>NOT RELATED TO SRC OR ANY CANDIDATE!  Anonymous Voting</h1>
+    <p>Survey for hope. Vote freely and anonymously. Let's see who leads the race 💀</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="container">
+  <h2>Student Voting Form</h2>
+
+  <form id="voteForm">
+
+    <label>Course of Study & Level</label>
+    <input type="text" name="course" required>
+
+    <label>Pressing Needs in Your Department / School</label>
+    <textarea name="needs" required></textarea>
+
+    <label>Expectations from SRC Presidential Aspirants</label>
+    <textarea name="expectations" required></textarea>
+
+    <label>Select One Candidate You Support</label>
+    <div class="candidates">
+      <div class="card" data-value="UMB">UMB</div>
+      <div class="card" data-value="Iddris">Iddris</div>
+      <div class="card" data-value="Peneric">Peneric</div>
+      <div class="card" data-value="Kenedi">Kenedi</div>
+      <div class="card" data-value="Solomon">Solomon</div>
+    </div>
+
+    <input type="hidden" name="candidate" id="candidate" required>
+
+    <label>Advice or Additional Comments</label>
+    <textarea name="advice"></textarea>
+
+    <button type="submit" id="submitBtn">Submit Vote</button>
+  </form>
+</section>
+
+<footer>
+  Developed with ❤️ by <strong>Azz Internet Hub</strong> | 0598160732
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
