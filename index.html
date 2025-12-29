@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDS SRC Student Voices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Have Your Say!</h1>
+      <p>Share your thoughts anonymously for the upcoming UDS SRC elections.</p>
+    </div>
+  </header>
+
+  <!-- Form Section -->
+  <main class="container">
+    <form id="voteForm">
+      <h2>Student Voting Form</h2>
+
+      <label for="course">Course of Study & Level:</label>
+      <input type="text" id="course" name="course" placeholder="e.g., BSc Computer Science, 200 level" required>
+
+      <label for="need">Pressing Need in Your Department or School:</label>
+      <textarea id="need" name="need" placeholder="What needs to be solved?" required></textarea>
+
+      <label for="expectations">Expectations from SRC Presidential Aspirants:</label>
+      <textarea id="expectations" name="expectations" placeholder="What do you expect?" required></textarea>
+
+      <label>Who do you support?</label>
+      <div class="candidates">
+        <div class="candidate-card" data-name="UMB"><h3>UMB</h3></div>
+        <div class="candidate-card" data-name="Iddris"><h3>Iddris</h3></div>
+        <div class="candidate-card" data-name="Peneric"><h3>Peneric</h3></div>
+        <div class="candidate-card" data-name="Kenedi"><h3>Kenedi</h3></div>
+        <div class="candidate-card" data-name="Solomon"><h3>Solomon</h3></div>
+      </div>
+
+      <input type="hidden" id="selectedCandidate" name="selectedCandidate" required>
+
+      <label for="advice">Any Advice or Additions:</label>
+      <textarea id="advice" name="advice" placeholder="Share your advice..." required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+      <p class="footer">Developed with ❤️ by Azz Internet Hub | 0598160732</p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

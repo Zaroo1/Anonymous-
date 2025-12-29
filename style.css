@@ -1,0 +1,77 @@
+/* Reset & Font */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 320px;
+  background: url('hero-background.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-overlay {
+  background: rgba(0,50,0,0.6);
+  padding: 35px 40px;
+  border-radius: 15px;
+  animation: fadeIn 1.5s ease-out;
+}
+.hero h1 { font-size: 2.8rem; font-weight: bold; margin-bottom: 10px; }
+.hero p { font-size: 1.3rem; font-weight: 300; }
+
+/* Container */
+.container {
+  max-width: 650px;
+  margin: -60px auto 50px auto;
+  padding: 30px;
+  background-color: #f9fff9;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: slideUp 1s ease-out;
+}
+form h2 { text-align: center; color: #006400; margin-bottom: 25px; font-size: 2rem; }
+
+/* Labels & Inputs */
+label { display: block; margin-top: 15px; font-weight: bold; color: #004d00; }
+input[type="text"], textarea {
+  width: 100%; padding: 12px; margin-top: 5px;
+  border: 2px solid #c0ffc0; border-radius: 10px;
+  font-size: 1rem; transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="text"]:focus, textarea:focus {
+  border-color: #ffd700; outline: none; box-shadow: 0 0 8px #ffd700;
+}
+
+/* Candidate Cards */
+.candidates { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px; justify-content: center; }
+.candidate-card {
+  flex: 1 1 120px; min-width: 120px;
+  background-color: #ffd700; border-radius: 15px;
+  padding: 15px 10px; text-align: center; cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.candidate-card:hover { transform: translateY(-8px) scale(1.05); background: #fff700; box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
+.candidate-card.selected {
+  background-color: #006400; color: white; cursor: default;
+  transform: scale(1.05); box-shadow: 0 0 15px #ffd700;
+}
+.candidate-card h3 { font-size: 1.2rem; }
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 25px; width: 100%; padding: 14px;
+  background-color: #004d00; color: white; font-size: 1.1rem; font-weight: bold;
+  border: none; border-radius: 10px; cursor: pointer;
+  transition: all 0.3s ease; position: relative; overflow: hidden;
+}
+.submit-btn:hover { background-color: #006400; }
+.submit-btn:active { transform: scale(0.95); }
+
+/* Footer */
+.footer { text-align: center; margin-top: 25px; font-size: 0.85rem; color: #555; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
+@keyframes slideUp { from {opacity:0; transform:translateY(50px);} to {opacity:1; transform:translateY(0);} }
